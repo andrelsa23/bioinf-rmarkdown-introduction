@@ -2,11 +2,11 @@
 title: "About Me"
 author: "Andre Lucas Simoes Araujo"
 output:
+  word_document:
+    toc: yes
   html_document:
     toc: yes
   pdf_document:
-    toc: yes
-  word_document:
     toc: yes
 bibliography: references.bib
 ---
@@ -17,13 +17,13 @@ I am from Brazil, and I was born in a city called Nova Iguacu, in Rio de Janeiro
 
 In addition, to my passion for plants and biology, I liked also things related to architecture and design. During my high school, I took a technical course related to building. In my third year I had an opportunity to take an internship in a private company. I was 17 years old by that time. During my internship I noticed that architecture or civil engineering was not for me since it was a stressful moment of my life, and I was definitely not enjoying it. I learned a lot along though.
 
-After finishing my high school, I pursue for college. As I mentioned I always loved biology and plants, then I decided to take Agriculture and Environmental engineering at [Universidade Federal Rural do Rio de janeiro](https://portal.ufrrj.br/). In the beginning I enjoyed the course, although calculus classes were very stressful. In my second semester, I applied for an internship in the weed lab group from my university. By that time, I knew that they had some research involving phytoremediation of soil which I thought was very interesting, and it was the reason that I applied for the group. I had my own experiment related and it was a lot of learning. However, I noticed that I was more attracted for the weed science research than the environmental.  As consequence, I took the national exam again to switch my major to Agronomy.
+After finishing my high school, I pursue for college. As I mentioned I always loved biology and plants, then I decided to take Agriculture and Environmental engineering at [Universidade Federal Rural do Rio de janeiro](https://portal.ufrrj.br/). In the beginning I enjoyed the course, although calculus classes were very stressful. In my second semester, I applied for an internship in the weed lab group from my university. By that time, I knew that they had some research involving phytoremediation of soil which I thought was very interesting, and it was the reason that I applied for the group. I had my own experiment related to that, and it was a lot of learning. However, I noticed that I was more attracted for the weed science research than the environmental part.  As a consequence, I took the national exam again to switch my major to Agronomy.
 
-By the end of my undergraduate program, I had the opportunity to go to United States to take an internship in the weed science group of [Colorado State University](https://www.colostate.edu/). It was an amazing experience. I learned a lot while I was helping the graduate students with their experiments. During my time in the weed lab, I had also the chance to possess my own experiment. It was very important to me once the data obtained from that I used in my final project to finish my Agronomy bachelors in Brazil. It was the first time that I used R with the goal to analyze the statistics from my experiment, and to create a graph of dose-response - I used drc and ggplot2 packages. The equation the had the best fit to my data was the 3 parameter log-logistic, as followed:
-$$F(x) = D/(1+(x/C)^{(-B)})$$
+By the end of my undergraduate program, I had the opportunity to go to United States to take an internship in the weed science group of [Colorado State University](https://www.colostate.edu/). It was an amazing experience. I learned a lot while I was helping the graduate students with their experiments. During my time in the weed lab, I had also the chance to possess my own experiment. It was very important to me once the data obtained from that I used as my final project to finish my Agronomy bachelors in Brazil. It was the first time that I used R with the goal to analyze the statistics from my experiment, and to create a graph of dose-response. I used drc and ggplot2 packages. The equation the had the best fit to my data was the 3 parameter log-logistic, as followed:
+$$F(x) = \frac{D}{1+(x/C)^{-B}}$$
 
 I spent one year and three months in Fort Collins and after that I returned to Brazil to finish my bachelor degree.
-When I graduated, I had the opportunity to go back to Fort Collins, to take my Master in the same weed lab group.
+When I graduated, I had the opportunity to come back to Fort Collins, to take my Master in the same weed lab group.
 
 Here, it is a photo of myself in one of the place that I spend most of my time at work: at the greenhouse.
 
@@ -31,9 +31,22 @@ Here, it is a photo of myself in one of the place that I spend most of my time a
 knitr::include_graphics("images/mypicture.jpg", auto_pdf = TRUE)
 ```
 
-Outside of work I love to get together with friends, go to the gym, cooking, playing either card games or online games, to watch TV show and movies.
+I am in my second semester as Master student. I decided to take Bioinformatics class because I think it will be extremely useful for my research at some point in the future.
+
+I am an active person and those a some of the things that I like to do outside of work:
+
+1. I love to get together with friends
+2. Go to the gym at least 5 times per week
+3. To play volleyball during the weekends
+4. To  watch TV show and movies
 
 
 # Research Interests
 
-I'm interested in weed resistance and the mechanism of resistance related to it. I have been working in a weed resistance survey in which I have been applying different herbicides mode of action to check possible resistant candidates.
+I'm interested in weed resistance and the mechanism of resistance related to it. I have been working in a weed resistance survey in which I have applied different herbicides mode of action to check possible resistant candidates.
+
+## Influential papers
+
+As I mentioned, during my undergraduate program I was working in the weed lab group in Brazil. One of the projects that I was involved, it is related to an important weed called Conyza. That project was very fascinating to me, especially because the 2,4-D herbicide resistance involved to that population is very unique. The first report @de2019first was published in 2019. The same population is resistant to  other several herbicides, and last year we published this paper @leal2021sumatran. A lot of work still have to be done to elucidate the resistant mechanisms involved to it. Although this is not my main project, it has been very important for me. 
+
+# Citations
